@@ -16,11 +16,12 @@
                
 
                 <div class="card-body">
-                    @if (session('status'))
+                    @if (session('success'))
                         <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
+                            {{ session('success') }}
                         </div>
                     @endif
+                     
 
                     <table width="100%">
                       
@@ -38,22 +39,26 @@
                             <td>{{$user->name}}</td>
                             <td>{{$user->email}} </td>
                             <td> 
-                               @auth
+                                @auth
+                                @if(auth::user()->email == $user->email) 
                                 <a href="{{ route('home.edit',$user->id)}}" class="btn btn-primary">
                                     <i class="fa fa-btn fa-edit"></i> 
                                 </a>
+                                @endif
                                 @endauth
                             </td>
                             <td>
-                                @auth 
+                                @auth
+                                @if(auth::user()->email == $user->email) 
                                 <form action="{{ route('home.destroy',$user->id) }}" method="POST">
-                                    {{ csrf_field() }}
-                                    {{ method_field('DELETE') }}
+                                    @csrf
+                                    @method('DELETE')
                                     <button type="submit" class="btn btn-danger">
                                         <i class="fa fa-btn fa-trash"></i>
                                     </button>
                                 </form>
-                                @endauth                                 
+                                @endif
+                                @endauth                             
                             </td>
                             
                         </tr>
@@ -76,7 +81,7 @@
     @auth
     <div class="row justify-content-center">
         <div class="col-md-6 m-t-md">
-            <a href="{{ route('logout') }}"
+            <a class="nav-link btn btn-primary" href="{{ route('logout') }}"
             onclick="event.preventDefault();
                           document.getElementById('logout-form').submit();">
              {{ __('Logout') }}

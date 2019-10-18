@@ -48,7 +48,7 @@ class HomeController extends Controller
     {
        $user=User::find($id);
        $user->delete();
-       return redirect('home');
+       return redirect('home')->with('success', 'Contact deleted!');
     
     }
 

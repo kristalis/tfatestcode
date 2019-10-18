@@ -14,6 +14,7 @@ A small web site for registering details in a database. Follow the steps below i
 
 - $git clone https://github.com/kristalis/tfatestcode.git.
 - Create MySQL db [ you can change db details in .env file or use current details].
+
 -- dbName : tfcode --UserName: root  --Pwd: blank
 - $composer install.
 - $php artisan key:generate

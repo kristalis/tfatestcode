@@ -8,9 +8,13 @@
 </p>
 ## Installing TFA test Code
 clone repo
+
 set MySql database dbName: tfacode  Username: root Pwd : blank
+
 compser install
+
 php artisan key:generate
+
 php artisan serve
 
 ## About Laravel

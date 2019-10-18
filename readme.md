@@ -19,9 +19,9 @@ php artisan serve
 
 ## Installing TFA test Code
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+A small web site for registering details in a database. Follow the steps below to install on your local machine:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [$git clone https://github.com/kristalis/tfatestcode.git].
 - [Powerful dependency injection container](https://laravel.com/docs/container).
 - Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
 - Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).

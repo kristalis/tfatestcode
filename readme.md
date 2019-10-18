@@ -7,11 +7,11 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 ## Installing TFA test Code
-clone repo
-set MySql database dbName: tfacode  Username: root Pwd : blank
-compser install
-php artisan key:generate
-php artisan serve
+-clone repo
+-set MySql database dbName: tfacode  Username: root Pwd : blank
+-compser install
+-php artisan key:generate
+-php artisan serve
 
 ## About Laravel
 

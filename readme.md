@@ -6,28 +6,20 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
-## Installing TFA test Code
-clone repo : $git clone https://github.com/kristalis/tfatestcode.git<br>
-Create MySql database <br>
-    dbName: tfacode<br>
-    - Username: root<br>
-    - Pwd : blank<br>
-$compser install<br>
-php artisan key:generate<br>
-php artisan migrate<br>
-php artisan serve
+
 
 ## Installing TFA test Code
 
-A small web site for registering details in a database. Follow the steps below to install on your local machine:
+A small web site for registering details in a database. Follow the steps below in your terminal to install on your local machine:
 
 - $git clone https://github.com/kristalis/tfatestcode.git.
-- Create MySQL db.
--- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Create MySQL db [ you can change db details in .env file or use current details].
+-- dbName : tfcode --UserName: root  --Pwd: blank
+- $composer install.
+- $php artisan key:generate
+- $php artisan migrate [creating your database tables]
+- $php artisan serve [launch website].
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:

@@ -73,5 +73,21 @@
         </div>
     </div>
     @endguest
+    @auth
+    <div class="row justify-content-center">
+        <div class="col-md-6 m-t-md">
+            <a href="{{ route('logout') }}"
+            onclick="event.preventDefault();
+                          document.getElementById('logout-form').submit();">
+             {{ __('Logout') }}
+         </a>
+
+         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+             @csrf
+         </form>
+        </div>
+    </div>
+        
+    @endauth
 </div>
 @endsection
